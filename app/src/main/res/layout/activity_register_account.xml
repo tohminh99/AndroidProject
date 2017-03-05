@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.bignerdranch.andriod.newsapp.RegisterAccountActivity"
+                >
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:alpha="0.6"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_id"
+        android:hint="Enter ID"
+        android:textColor="#ffffff"
+        android:drawablePadding="10dp"
+        android:textColorHint="#cccccc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/reg_pass"
+        android:hint="Enter Your Password"
+        android:textColor="#ffffff"
+        android:textColorHint="#cccccc"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/reg_id"
+        android:layout_alignLeft="@+id/reg_id"
+        android:layout_alignStart="@+id/reg_id"
+        android:layout_alignRight="@+id/reg_id"
+        android:layout_alignEnd="@+id/reg_id" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btn_reg"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/reg_pass"
+        android:layout_alignLeft="@+id/reg_pass"
+        android:layout_alignStart="@+id/reg_pass"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/reg_pass"
+        android:layout_alignEnd="@+id/reg_pass" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create Account"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:id="@+id/txt_success_name"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="After clicking the Register Button. You will be redirected to Login Screen"
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txt_success_name"
+        android:layout_alignRight="@+id/reg_id"
+        android:layout_alignEnd="@+id/reg_id"
+        android:layout_alignLeft="@+id/reg_id"
+        android:layout_alignStart="@+id/reg_id" />
+</RelativeLayout>
+
